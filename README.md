@@ -16,6 +16,7 @@
                 - cd ~
                 - vi .bash_profile
                 - add path in this. looks like
+
                             ``` sh # .bash_profile
                             # Get the aliases and functions
                             if [ -f ~/.bashrc ]; then
@@ -25,7 +26,22 @@
                             JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.282.b08-1.el7_9.x86_64
                             PATH=$PATH:$HOME/bin:$JAVA_HOME
                             export PATH ```
+                - exit
+                - sudo su -
+                - echo $JAVA_HOME --> should be the java path            
         - Install Jenkins 
+            - yum install -y wget
+            - sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+            - sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+            - yum install -y jenkins
+            - service jenkins status  --> it might be stopped
+            - service jenkins start  --> to start jenkins service
+            - get public url of an instance and add:8080 to use jenkins UI
+            - cat /var/lib/jenkins/secrets/initialAdminPassword --> to get password
+            - Copy and paste thsi password in jenkins UI
+            - Install all plugins
+            - then creat user and password
+            - YOU ARE ALL SET WITH JAVA AND JENKINS
    -  
 
 
