@@ -6,7 +6,7 @@
    - create Firewall Rule for port 22, 443, 80. source ip --> https://www.whatismyip.com/ and 35.235.240.0/20 for IAP
    - create instance tempelate. Network tag --> 'my-server'
 ## step 2 (JENKINS, TOMCAT SERVER ON CE, GITHUB CODE)
-   - 'INSTALL JENKINS on Compute Engine'
+   - 'INSTALL JENKINS on Compute Engine and reserve static ip for this CE'
         - INSTALL JAVA
             - $ sudo su -
             - yum install -y java-1.8*
@@ -154,3 +154,15 @@
                 <user username="deployer" password="deployer" roles="manager-script"/>
                 <user username="tomcat" password="s3cret" roles="manager-gui"/>
               - now go to UI and type username="tomcat" password="s3cret"
+## step 8 (INTEGRATE TOMCAT ON JENKINS TO DEPLOY WAR FILE)
+        - On jenkins UI install deploy to container plugin
+            - `New Item` > `maven Project` 
+            - in git add path for github repo
+            - in build
+                 - goals and option : clean install package
+            - post build actions: Deploy war/ear to container
+               - WAR/EAR files: **/*.war
+               - container: tomcat: 8.x
+               - now add user id and password for user which we made previously and also provide url for tomcat      
+            - build job 
+            - ## if got error see your firewall rule and make sure that jenkins server external ip allowed for tomcat server 
