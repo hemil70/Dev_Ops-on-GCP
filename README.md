@@ -51,7 +51,8 @@
            -  Type echo "Hello"  --> then save 
         - `Build Now` --> to build job and then see output in console output window
            -  under build history if
-            ```--> Blue ball = SUCCESS
+            ```
+               --> Blue ball = SUCCESS
                --> Red Ball = FAILED
                --> Orange Ball = Partial Success```   
 
