@@ -102,7 +102,7 @@
 
 ### This creat war file and now we need host this.
 ## step 7 (TOMCAT SERVER TO HOST WAR FILE)
-   - INSTALL JAVA
+        - INSTALL JAVA
             - $ sudo su -
             - yum install -y java-1.8*
             - SET HOME PATH FOR JAVA
