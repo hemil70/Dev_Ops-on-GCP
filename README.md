@@ -4,7 +4,7 @@
    - create project and attach that with billing account
    - Create custom VPC for this project ( enable API for compute engine ) and enable private google access
    - create Firewall Rule for port 22, 443, 80. source ip --> https://www.whatismyip.com/ and 35.235.240.0/20 for IAP
-   - create instance tempelate. Network tag --> 'my-server'
+   - create instance tempelate. to create all vm from this tempelate 
 ## step 2 (JENKINS, TOMCAT SERVER ON CE, GITHUB CODE)
    - 'INSTALL JENKINS on Compute Engine and reserve static ip for this CE'
         - INSTALL JAVA
