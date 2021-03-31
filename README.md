@@ -168,4 +168,4 @@
             - ## if got error see your firewall rule and make sure that jenkins server external ip allowed for tomcat server 
 ## step 9 (AUTOMATIC BUILD USING poll SCM)      
         - in previous job just select poll SCM under build triggers and do * * * * * (For every minute )      
-        - now when there is change in code it will automatically deployed on tomcat server
+        - now when there is change in code it will automatically deployed on tomcat server       
