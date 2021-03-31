@@ -125,7 +125,7 @@
                 - exit
                 - sudo su -
                 - echo $JAVA_HOME --> should be the java path  
-   - INSTALL TOMCAT ON COMPUTE ENGINE
+        - INSTALL TOMCAT ON COMPUTE ENGINE
             - yum install -y wget
             - cd /opt
             - wget https://apache.mirror.colo-serv.net/tomcat/tomcat-8/v8.5.64/bin/apache-tomcat-8.5.64.tar.gz
