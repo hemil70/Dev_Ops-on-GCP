@@ -172,4 +172,4 @@
 ![myimage-alt-tag](./pics/CE.png)     
 ![myimage-alt-tag](./pics/Firewall.png)
 ![myimage-alt-tag](./pics/jenkins-jobs.png)  
-![myimage-alt-tag](./pics/webapp on tomcat.png)         
+![myimage-alt-tag](./pics/webapp on tomcat.png)
