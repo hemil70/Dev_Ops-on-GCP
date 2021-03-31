@@ -17,7 +17,7 @@
                 - vi .bash_profile
                 - add path in this. looks like
 
-                            ``` sh # .bash_profile
+                            ```# .bash_profile
                             # Get the aliases and functions
                             if [ -f ~/.bashrc ]; then
                                     . ~/.bashrc
