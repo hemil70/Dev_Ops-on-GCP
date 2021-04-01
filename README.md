@@ -1,5 +1,5 @@
 # Dev_Ops-on-GCP
-![myimage-alt-tag](./pics/flow.png)
+![myimage-alt-tag](./pics/Flow.png)
 ## step 1 (SETUP PROJECT AND NETWORK FIREWALL)
    - Create GCP account
    - create project and attach that with billing account
